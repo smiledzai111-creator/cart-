@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "item": "minecraft:crossbow" }, { "item": "minecraft:tnt_minecart" } ],
+  "result": { "id": "cartpvp:cart_crossbow" }
+}

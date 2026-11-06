@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "cartpvp",
+  "version": "${version}",
+  "name": "Cart PvP Macro",
+  "description": "Nỏ Xe Mìn, macro cart PvP và ngòi TNT minecart 0.5 giây.",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.cartpvp.CartPvpMod"],
+    "client": ["com.cartpvp.client.CartPvpClient"]
+  },
+  "mixins": ["cartpvp.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.1", "java": ">=21", "fabric-api": "*" }
+}

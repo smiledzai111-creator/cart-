@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.cartpvp.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["TntMinecartMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
