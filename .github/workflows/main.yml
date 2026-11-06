@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cartpvp
     steps:
       - uses: actions/checkout@v4
 
@@ -29,5 +32,5 @@ jobs:
         with:
           name: cartpvp-mod
           path: |
-            build/libs/*.jar
-            !build/libs/*-sources.jar
+            cartpvp/build/libs/*.jar
+            !cartpvp/build/libs/*-sources.jar
