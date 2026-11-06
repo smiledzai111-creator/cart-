@@ -19,13 +19,17 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Cài Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: 8.10
+      - name: Cài Gradle 8.10
+        run: |
+          cd ~
+          wget -q https://services.gradle.org/distributions/gradle-8.10-bin.zip
+          unzip -q gradle-8.10-bin.zip
+          echo "$HOME/gradle-8.10/bin" >> $GITHUB_PATH
 
       - name: Build
-        run: gradle build
+        run: |
+          gradle --version
+          gradle build --no-daemon
 
       - name: Upload file jar
         uses: actions/upload-artifact@v4
